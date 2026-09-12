@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PETK</title>
+        
+        <style>
+body{
+    background-color: black
+}
+body:active>#kol{
+    animation-name: bod;
+    animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+body:active{
+    animation-name: bod;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+body:active>#kol>.animation{
+    background-color: black;
+}
+body:active>#kol>.animation>.m{
+    width: 180px;
+    margin: 70px;
+    margin-left: 50px;
+    transition: all .2s 0s;
+    animation-name: m;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+body:active>#kol>#lin>.d{
+    background-color: black;
+    border-radius: 3000px;
+    margin-left: 100px;
+    margin-top: 50px;
+    transition: all .5s .01s;
+    width:90px;
+    height: 90px;
+
+}
+@keyframes bod{
+    0%{background-color: aqua;}
+    5%{background-color: yellowgreen;}
+    10%{background-color: blue;}
+    15%{background-color: yellow;}
+    20%{background-color: blueviolet;}
+    25%{background-color: khaki;}
+    30%{background-color: brown;}
+    35%{background-color: teal;}
+    40%{background-color: cadetblue;}
+    45%{background-color: violet;}
+    50%{background-color: chartreuse;}
+    55%{background-color: thistle;}
+    60%{background-color: coral;}
+    65%{background-color: springgreen;}
+    70%{background-color: darkgreen;}
+    75%{background-color: silver;}
+    80%{background-color: deeppink;}
+    85%{background-color: slateblue;}
+    90%{background-color: gold;}
+    95%{background-color: indianred;}
+    100%{background-color: orangered;}
+}
+@keyframes m{
+    0%{background-color: aqua;}
+    5%{background-color: yellowgreen;}
+    10%{background-color: blue;}
+    15%{background-color: yellow;}
+    20%{background-color: blueviolet;}
+    25%{background-color: khaki;}
+    30%{background-color: brown;}
+    35%{background-color: teal;}
+    40%{background-color: cadetblue;}
+    45%{background-color: violet;}
+    50%{background-color: chartreuse;}
+    55%{background-color: thistle;}
+    60%{background-color: coral;}
+    65%{background-color: springgreen;}
+    70%{background-color: darkgreen;}
+    75%{background-color: silver;}
+    80%{background-color: deeppink;}
+    85%{background-color: slateblue;}
+    90%{background-color: gold;}
+    95%{background-color: indianred;}
+    100%{background-color: orangered;}
+}
+.animation {
+    margin-left: 140px;
+    margin-top: -90px;
+    border-radius: 10000px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    animation-name: anim;
+    animation-duration: .7s;
+    animation-delay: .001ms;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+    display: inline-block;
+}
+.animation:hover{
+    background-color: rgb(99, 171, 163);
+    transition: all .5s .01s;
+}
+#toop2{
+    animation-delay: 1s;
+    margin-left: -90px;
+    margin-top: -500px;
+    margin-bottom: 11px;    
+}
+.animation:hover>.m{
+    transition: all .5s .01s;
+    margin: 70px;
+}
+.m{
+    border-radius: 10000px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    margin: 32px;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+    
+}
+p{
+    opacity: 0;
+}
+a:focus>.d{
+    
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    border-top-right-radius:30px;
+    border-top-left-radius: 30px;
+    transition: all .5s .01s;
+    height:90px;
+}
+#kol{
+    width: 250px;
+    height: 210px;
+    border-bottom-right-radius: 3000px;
+    border-bottom-left-radius: 3000px;
+    border-top-right-radius:1000px;
+    border-top-left-radius: 1000px;
+    margin: 500px;
+    margin-left: 400px;
+    margin-top: 50px;
+    background-color: black;
+    padding: 80px;    
+}
+.m:hover{
+    background-color: rgb(171, 166, 99);
+}
+#kol:hover>#lin>.d{
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+    border-top-right-radius:30px;
+    border-top-left-radius: 30px;
+    transition: all .5s .01s;
+    height: 90px;
+
+}
+#kol:hover>.animation>.m{
+    transition: all .5s .01s;
+    margin: 70px;
+}
+.d:hover{
+    background-color: rgb(171, 99, 99);
+    transition: all .5s .01s;
+}
+.d{
+    opacity: 1;
+    background-color: white;
+    margin-top: 130px;
+    margin-left: 58px;
+    width: 160px;
+    height: 20px;
+    animation-name: d;
+    animation-duration: 2s;
+    border-radius: 100px;
+    animation-fill-mode: both;
+    transform: scaleY(20%);
+    transform: scaleX(100%);
+}
+@keyframes anim{
+    0%{
+        transform: scale(95%);
+        
+    }
+    100%{
+        transform: scale (100%);
+    }
+}
+        </style>
+    </head>
+    <body>
+    <div id="kol">
+        <div class="animation" ><div class="m"></div></div>
+        <div class="animation" id="toop2"><div class="m"></div></div>
+        <a href="#" id="lin"><div class="d"><p>kkyyuuchy</p></div></a>
+    </div>
+    </body>
+</html>
